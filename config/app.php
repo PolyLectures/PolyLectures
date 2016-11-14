@@ -208,9 +208,10 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-	'Form' => 'Collective\Html\FormFacade',
+	    'Form' => 'Collective\Html\FormFacade',
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
          'Html' => 'Collective\Html\HtmlFacade',
+         'Input'     => Illuminate\Support\Facades\Input::class,
 
     ],
 
