@@ -13,5 +13,4 @@
 
 
 
-Route::get('/', function () { return view(''); });
-//test marius
+Route::get('/', function () { return view('home'); });
