@@ -3,6 +3,7 @@
 namespace App\metier;
 
 use Illuminate\Database\Eloquent\Model;
+use DB;
 
 class Livre extends Model
 {
@@ -21,4 +22,9 @@ class Livre extends Model
         'couverture',
     ];
     public $timetamps = true;
+    
+    public function getlisteLivres(){
+        $lesLivres=DB::table('livre')->get();
+        return $lesLivres;
+    }
 }
