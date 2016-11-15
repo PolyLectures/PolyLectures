@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Auteur extends Model
 {
-    //On déclare la table Livre
+    //On déclare la table Auteur
     
     protected $table ='auteur';
     
