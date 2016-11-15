@@ -24,7 +24,9 @@ class Livre extends Model
     public $timetamps = true;
     
     public function getlisteLivres(){
-        $lesLivres=DB::table('livre')->get();
+        $lesLivres=DB::table('livre')
+                ->join('auteur','livre.idauteur','=','auteur.idauteur')
+                ->get();
         return $lesLivres;
     }
 }
