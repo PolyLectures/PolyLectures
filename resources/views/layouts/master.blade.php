@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="fr">
     <head>
-        <title>PolyLecture</title>
+        <title>PolyLectures</title>
         {!! Html::style('assets/css/bootstrap.min.css') !!}
         {!! Html::style('assets/css/bootstrap.css') !!}
     </head>

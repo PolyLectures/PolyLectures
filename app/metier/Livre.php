@@ -25,6 +25,7 @@ class Livre extends Model
     
     public function getlisteLivres(){
         $lesLivres=DB::table('livre')
+                ->select('titre', 'nomauteur','prenomauteur', 'anneeparution')
                 ->join('auteur','livre.idauteur','=','auteur.idauteur')
                 ->get();
         return $lesLivres;

@@ -11,4 +11,10 @@
 |
 */
 
+// Route de la page d'accueil
 Route::get('/', function () { return view('home'); });
+
+/* Routes des livres */
+
+// Lister les livres
+Route::get('/listerLivres', 'LivreController@listerLivres');
